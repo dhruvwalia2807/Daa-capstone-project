@@ -1,0 +1,30 @@
+
+Sorting
+  size              Merge sort      Insertion sort
+  100                 0.461 ms            0.329 ms
+  500                 1.134 ms           16.056 ms
+  1000                4.603 ms           62.063 ms
+  2000                7.294 ms          203.432 ms
+
+Knapsack (capacity 200 kg)
+  size             Knapsack DP
+  25                  0.536 ms
+  50                  0.905 ms
+  100                 1.921 ms
+  200                 3.647 ms
+
+Dijkstra (one source)
+  size                Dijkstra
+  100                 0.154 ms
+  400                 0.646 ms
+  1600                3.011 ms
+  3200                6.914 ms
+
+Nearest neighbour (stops)
+  size       Nearest neighbour
+  20                  0.044 ms
+  40                  0.126 ms
+  80                  0.368 ms
+  160                 1.228 ms
+
+Chart saved to /home/claude/courier_planner/output/runtime_chart.png

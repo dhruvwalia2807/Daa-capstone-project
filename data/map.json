@@ -1,0 +1,23 @@
+{
+  "depot": "Depot (Sector 14)",
+  "roads": [
+    ["Depot (Sector 14)", "MG Road", 3.2],
+    ["Depot (Sector 14)", "Udyog Vihar", 5.1],
+    ["Depot (Sector 14)", "Sohna Road", 6.4],
+    ["MG Road", "Cyber Hub", 4.0],
+    ["MG Road", "Golf Course Road", 5.5],
+    ["MG Road", "Sector 56", 6.8],
+    ["Udyog Vihar", "Cyber Hub", 2.9],
+    ["Udyog Vihar", "Manesar", 14.0],
+    ["Cyber Hub", "DLF Phase 3", 2.2],
+    ["Cyber Hub", "Golf Course Road", 4.6],
+    ["Golf Course Road", "Sector 56", 2.7],
+    ["Golf Course Road", "Sohna Road", 7.3],
+    ["Sohna Road", "Sector 56", 4.9],
+    ["Sohna Road", "Badshahpur", 5.8],
+    ["Sector 56", "Badshahpur", 3.6],
+    ["DLF Phase 3", "Udyog Vihar", 3.4],
+    ["Manesar", "Sohna Road", 17.5],
+    ["Badshahpur", "Manesar", 16.0]
+  ]
+}

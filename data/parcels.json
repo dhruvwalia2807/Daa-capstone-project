@@ -1,0 +1,14 @@
+[
+  {"id": "P01", "customer": "Cyber Hub",        "weight": 8,  "priority": 5, "deadline": 11, "value": 50},
+  {"id": "P02", "customer": "Sector 56",        "weight": 5,  "priority": 3, "deadline": 15, "value": 30},
+  {"id": "P03", "customer": "Golf Course Road", "weight": 12, "priority": 4, "deadline": 13, "value": 46},
+  {"id": "P04", "customer": "Manesar",          "weight": 9,  "priority": 2, "deadline": 17, "value": 22},
+  {"id": "P05", "customer": "MG Road",          "weight": 3,  "priority": 5, "deadline": 10, "value": 48},
+  {"id": "P06", "customer": "Sohna Road",       "weight": 7,  "priority": 3, "deadline": 14, "value": 33},
+  {"id": "P07", "customer": "DLF Phase 3",      "weight": 6,  "priority": 4, "deadline": 12, "value": 41},
+  {"id": "P08", "customer": "Badshahpur",       "weight": 10, "priority": 1, "deadline": 18, "value": 14},
+  {"id": "P09", "customer": "Udyog Vihar",      "weight": 4,  "priority": 2, "deadline": 16, "value": 19},
+  {"id": "P10", "customer": "Cyber Hub",        "weight": 11, "priority": 3, "deadline": 13, "value": 35},
+  {"id": "P11", "customer": "Sector 56",        "weight": 2,  "priority": 4, "deadline": 12, "value": 37},
+  {"id": "P12", "customer": "MG Road",          "weight": 14, "priority": 1, "deadline": 18, "value": 16}
+]

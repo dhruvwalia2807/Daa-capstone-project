@@ -1,0 +1,11 @@
+test_against_brute_force (test_basic.KnapsackTests.test_against_brute_force) ... ok
+test_dijkstra (test_basic.RoutingTests.test_dijkstra) ... ok
+test_route_visits_everything_and_returns (test_basic.RoutingTests.test_route_visits_everything_and_returns) ... ok
+test_sample_map_is_connected (test_basic.RoutingTests.test_sample_map_is_connected) ... ok
+test_empty_and_single (test_basic.SortingTests.test_empty_and_single) ... ok
+test_matches_python_sorted (test_basic.SortingTests.test_matches_python_sorted) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK

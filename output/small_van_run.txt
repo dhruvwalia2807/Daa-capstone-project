@@ -1,0 +1,66 @@
+
+============================================================
+STEP 1: parcels sorted by deadline, then priority
+============================================================
+id    customer               kg  prio  deadline  value
+P05   MG Road                 3     5      10:00     48
+P01   Cyber Hub               8     5      11:00     50
+P07   DLF Phase 3             6     4      12:00     41
+P11   Sector 56               2     4      12:00     37
+P03   Golf Course Road       12     4      13:00     46
+P10   Cyber Hub              11     3      13:00     35
+P06   Sohna Road              7     3      14:00     33
+P02   Sector 56               5     3      15:00     30
+P09   Udyog Vihar             4     2      16:00     19
+P04   Manesar                 9     2      17:00     22
+P08   Badshahpur             10     1      18:00     14
+P12   MG Road                14     1      18:00     16
+
+============================================================
+STEP 2: what fits in a 25 kg van (knapsack DP)
+============================================================
+DP table (first 15 columns):
+parcel      0    1    2    3    4    5    6    7    8    9   10   11   12   13   14
+-----------------------------------------------------------------------------------
+none        0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+P05         0    0    0   48   48   48   48   48   48   48   48   48   48   48   48
+P01         0    0    0   48   48   48   48   48   50   50   50   98   98   98   98
+P07         0    0    0   48   48   48   48   48   50   89   89   98   98   98   98
+P11         0    0   37   48   48   85   85   85   85   89   89  126  126  135  135
+P03         0    0   37   48   48   85   85   85   85   89   89  126  126  135  135
+P10         0    0   37   48   48   85   85   85   85   89   89  126  126  135  135
+P06         0    0   37   48   48   85   85   85   85   89   89  126  126  135  135
+P02         0    0   37   48   48   85   85   85   85   89  115  126  126  135  135
+P09         0    0   37   48   48   85   85   85   85  104  115  126  126  135  135
+P04         0    0   37   48   48   85   85   85   85  104  115  126  126  135  135
+P08         0    0   37   48   48   85   85   85   85  104  115  126  126  135  135
+P12         0    0   37   48   48   85   85   85   85  104  115  126  126  135  135
+
+Best total value: 206
+Loaded: P05, P01, P07, P11, P02
+Total weight: 24 / 25 kg
+Left for the next trip: P03, P10, P06, P09, P04, P08, P12
+
+============================================================
+STEP 3: route
+============================================================
+Shortest distances from the depot (Dijkstra):
+  MG Road              3.2 km
+  Cyber Hub            7.2 km
+  DLF Phase 3          8.5 km
+  Sector 56           10.0 km
+
+Delivery order (nearest neighbour):
+  Depot (Sector 14) -> MG Road -> Cyber Hub -> DLF Phase 3 -> Sector 56 -> Depot (Sector 14)
+
+Roads actually driven:
+  Depot (Sector 14) -> MG Road -> Cyber Hub -> DLF Phase 3 -> Cyber Hub -> Golf Course Road -> Sector 56 -> MG Road -> Depot (Sector 14)
+
+Total route length: 28.9 km
+
+============================================================
+TIMING
+============================================================
+  sorting    0.0255 ms
+  knapsack   0.0353 ms
+  routing    0.0853 ms
